@@ -10,6 +10,10 @@
         integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
     <title> 2024ord1i </title>
 </head>
+<script>
+    alert("Controle su tiempo, recuerde que el tiempo de duración del examen es de 2 horas.");
+   
+</script>
 <style>
     body{
       background: rgb(32, 32, 32);
@@ -28,7 +32,11 @@
   display: flex;
   justify-content: center;
 }
-
+#timer{
+    border-radius:0%;
+    font-size:20px;
+    border: 3px solid rgb(38, 167, 167);
+}
 img {
       max-width: 30%;
       height: auto;
@@ -41,7 +49,7 @@ img {
 </style>
 <body>
 
-
+<p></p>
     <!--titulo-->
     <div class="container">
      
@@ -127,7 +135,7 @@ img {
                         <li><input type="radio" name="pregunta10" id="p04"> 1940</li>
                     </ol>
                     <hr />
-                    <button type="button" class="btn btn-primary" onclick="resultado()">RESULTADO</button>
+                    <button id="timer" type="button" class="btn btn-primary" onclick="resultado()">Calificar y ver solucionario</button>
                     <hr />
                 </form>
             </div>
@@ -172,7 +180,7 @@ img {
     else {p10=0}
 
     nota=p1+p2+p3+p4+p5+p6+p7+p8+p9+p10;
-    alert(" Aciertos: " + nota);
+    alert("Aciertos: " + nota + " \nPuntaje: "+nota*5/3 + "\nVer solucionario");
     window.location = 'https://youtu.be/0f3ZHuC-l0c'
 }
 </script>
