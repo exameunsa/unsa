@@ -1172,7 +1172,7 @@ function updateTime() {
   setInterval(updateTime, 1000);
 
   // Función para mostrar una alerta al finalizar un tiempo específico (por ejemplo, 60 segundos)
-  var tiempoLimite = 60*60; // En segundos
+  var tiempoLimite = 60*120; // En segundos
   setTimeout(function() {
     alert('¡Se ha alcanzado el límite de tiempo de ' + tiempoLimite + ' segundos!');
   }, tiempoLimite * 1000);
